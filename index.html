@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BuildWrite Apps</title>
+<meta name="description" content="Job Book, Receipt Run and Field Measure: three small apps for running building jobs from your phone.">
+<link rel="icon" href="job-book/icons/icon-192.png">
+<link rel="apple-touch-icon" href="job-book/icons/icon-180.png">
+<style>
+  :root {
+    --bg: #f4f2ee; --card: #ffffff; --ink: #16181c; --soft: #5b616b; --line: #dcd8d0;
+    --accent: #15607a; --accent-ink: #ffffff; --tint: #e8f0f3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121417; --card: #1c1f24; --ink: #eceef2; --soft: #a3a9b3; --line: #30343c;
+            --accent: #5fb3cf; --accent-ink: #0d1a1f; --tint: #1b2a30; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 28px 16px calc(40px + env(safe-area-inset-bottom, 0px)); }
+  h1 { font-size: 28px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -.01em; }
+  .lead { color: var(--soft); margin: 0 0 24px; }
+  .apps { display: grid; gap: 12px; margin-bottom: 28px; }
+  a.app { display: flex; gap: 14px; align-items: center; padding: 14px; border-radius: 14px; background: var(--card);
+          border: 1px solid var(--line); color: inherit; text-decoration: none; }
+  a.app:active { transform: scale(.99); }
+  a.app img { width: 56px; height: 56px; border-radius: 13px; flex: none; }
+  .app b { display: block; font-size: 17px; }
+  .app span { display: block; color: var(--soft); font-size: 14px; line-height: 1.4; }
+  .app .go { margin-left: auto; color: var(--soft); font-size: 22px; flex: none; }
+  h2 { font-size: 18px; margin: 0 0 10px; }
+  ol { margin: 0 0 24px; padding-left: 22px; }
+  ol li { margin-bottom: 10px; }
+  .box { background: var(--tint); border-radius: 12px; padding: 12px 14px; font-size: 14px; color: var(--ink); margin-bottom: 24px; }
+  .how { display: grid; gap: 8px; font-size: 14px; color: var(--soft); margin: 4px 0 24px; }
+  .how b { color: var(--ink); }
+  footer { color: var(--soft); font-size: 13px; border-top: 1px solid var(--line); padding-top: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>BuildWrite Apps</h1>
+  <p class="lead">Three small apps for running building jobs from your phone. One account works in all three, and your team's jobs are private to your team.</p>
+
+  <div class="apps">
+    <a class="app" href="job-book/">
+      <img src="job-book/icons/icon-192.png" alt="">
+      <div><b>Job Book</b><span>A running to-do list for every job, with permits and the job's status. Start here.</span></div>
+      <div class="go" aria-hidden="true">&rsaquo;</div>
+    </a>
+    <a class="app" href="receipt-run/">
+      <img src="receipt-run/icons/icon-192.png" alt="">
+      <div><b>Receipt Run</b><span>Snap a receipt, it reads the vendor and total, and files it to the job.</span></div>
+      <div class="go" aria-hidden="true">&rsaquo;</div>
+    </a>
+    <a class="app" href="field-measure/">
+      <img src="field-measure/icons/icon-192.png" alt="">
+      <div><b>Field Measure</b><span>Draw a footprint on site, tap in the measurements, works with no signal.</span></div>
+      <div class="go" aria-hidden="true">&rsaquo;</div>
+    </a>
+  </div>
+
+  <h2>Getting started</h2>
+  <ol>
+    <li><b>Open Job Book</b> and tap <b>Create an account instead</b>. Use the email address your invite was sent for, and type a password twice.</li>
+    <li><b>Name your team</b> &mdash; your business name, or your own. You start with an empty job book.</li>
+    <li><b>Sign in to Receipt Run and Field Measure</b> with the same email and password. Jobs you add in any of them show up in the others.</li>
+    <li><b>Put each app on your home screen</b> so it opens like a normal app (below).</li>
+  </ol>
+
+  <div class="box">These apps are invite-only for now. If Job Book says there's no invite for your email, ask the person who shared this page.</div>
+
+  <h2>Add to your home screen</h2>
+  <div class="how">
+    <div><b>iPhone (Safari):</b> open an app, tap the Share button, then <b>Add to Home Screen</b>.</div>
+    <div><b>Android (Chrome):</b> open an app, tap the &#8942; menu, then <b>Add to Home screen</b> or <b>Install app</b>.</div>
+    <div>Do it once for each of the three apps.</div>
+  </div>
+
+  <footer>Something not working, or an idea? Every app has a <b>Feedback</b> button at the top &mdash; it comes straight to us.</footer>
+</main>
+</body>
+</html>
